@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="15dp">
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:id="@+id/EditTextREEditTitle"
+            android:hint="无效的查找，请返回"/>
+        <Button
+            android:id="@+id/ButtonREDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="删除" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="作者："
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入作者"
+            android:id="@+id/EditTextREAuthor"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="内容编辑："
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/insert_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更换图片"></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ButtonRECancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消" />
+
+            <Button
+                android:id="@+id/ButtonRESave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EditTextREEditContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:hint="此处记录备忘事件"
+            android:background="#C6E2FF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>
